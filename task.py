@@ -3,6 +3,8 @@ from flask import Flask,request,render_template,session,jsonify
 import random, redis, pymongo,time
 from werkzeug import secure_filename
 import os
+from testModel import *
+
 
 import sys
 reload(sys)
@@ -45,6 +47,10 @@ def list_skills():
 def get_users():
     skill = request.json.get("skill")
     user_list = list(user_db.find({"skill":skill},{"_id":False}))
+    for x in user_list:
+        address = x['address']
+        solutions = Solution().select().where(Solution.solver==address)
+        x['solved'] = len(solutions)
     # 这里缺少历史记录
     return jsonify({"state":True,'user_list':user_list})
     
