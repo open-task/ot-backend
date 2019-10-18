@@ -61,6 +61,7 @@ def list_tasks():
     else:
         missions = list(Mission().select().order_by(-Mission.updatetime).where(1).paginate(page, page_amount))
 
+    database.close()
     missions = sorted([model_to_dict(x) for x in missions],key=lambda s: s['block'],reverse=True)
 
     for x in missions:
@@ -79,6 +80,7 @@ def get_users():
         solutions = Solution().select().where(Solution.solver==address)
         x['solved'] = len(solutions)
     # 这里缺少历史记录
+    database.close()
     return jsonify({"state":True,'user_list':user_list})
     
 # 用户设置页面
@@ -136,6 +138,20 @@ def get_user_info():
     return jsonify({"state":True,"user_info":user_info})
 
 
+    
+@app.route("/skill/search_task",methods=["GET","POST"])
+def search_task():
+    q = request.json.get("q")
+    page = request.json.get('page',1)
+    page_amount = 20
+    a = "%"+q+"%" 
+    print(a)
+    missions = list(Mission().select().order_by(-Mission.updatetime).where(Mission.context  ** str(a)).paginate(page, page_amount))
+    missions = sorted([model_to_dict(x) for x in missions],key=lambda s: s['block'],reverse=True)
+    for x in missions:
+        x['reward'] = str(x['reward'])
+    database.close()
+    return jsonify({"state":True,"missions":missions})
     
 
 
