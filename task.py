@@ -2,7 +2,7 @@
 from flask import Flask,request,render_template,session,jsonify
 import random, redis, pymongo,time
 from werkzeug import secure_filename
-import os
+import os,time
 from testModel import *
 from playhouse.shortcuts import dict_to_model, model_to_dict
 
@@ -168,7 +168,10 @@ def get_messages():
     page = request.json.get('page',1)
     page_amount = request.json.get('count',20)
 
-    messages = list(message_db.find({'state':True},{"_id":False}).skip(page_amount*(page-1)).limit(page_amount))
+    messages = list(message_db.find({'state':True},{"_id":False}).sort([("id",-1)]).skip(page_amount*(page-1)).limit(page_amount))
+    for x in messages:
+        x['create_time'] = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(x['create_time']))
+
     count = message_db.find({'state':True}).count()
     return jsonify({"state":True,"messages":messages,"count":count})
     
