@@ -2048,3 +2048,1229 @@ AttributeError: 'Mission' object has no attribute 'close'
 [2019-10-18 09:43:42 +0000] [1363] [DEBUG] POST /skill/list_skills
 [2019-10-18 09:56:44 +0000] [1363] [DEBUG] POST /skill/list_tasks
 [2019-10-18 09:56:44 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 10:17:47 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 10:17:47 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:42:04 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:42:04 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:44:57 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:44:57 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:45:50 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:45:50 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:45:55 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:45:55 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:46:06 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:46:06 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:57:04 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:57:04 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:57:11 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:57:11 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:57:51 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:57:51 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:57:53 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:57:53 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:59:31 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:59:31 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:59:34 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 11:59:34 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:59:37 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 11:59:37 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 12:17:00 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 12:17:00 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 13:49:30 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 13:49:30 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 13:55:25 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 13:55:25 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 14:12:42 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-18 14:12:42 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 15:50:01 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-18 15:50:01 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:37:05 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:37:05 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:37:16 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:37:16 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:37:34 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:37:38 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:37:38 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:37:39 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:37:39 +0000] [1363] [DEBUG] POST /skill/get_user_info
+[2019-10-19 20:37:41 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:37:41 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:38:05 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:05 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:38:09 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:38:13 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:13 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:38:14 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:17 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:18 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:19 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:21 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:22 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:24 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:25 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:25 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:38:26 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:38:26 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:27 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 20:38:29 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 20:38:29 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 21:43:31 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 21:43:32 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-19 23:07:25 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-19 23:07:25 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-20 06:33:35 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-20 06:33:35 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-21 00:02:44 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-21 00:02:44 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-21 15:40:13 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-21 15:40:13 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-21 16:11:59 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-21 16:11:59 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-21 16:45:29 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-21 16:45:29 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 00:03:51 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 00:03:51 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 10:03:16 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 10:03:16 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 10:03:16 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 10:03:16 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 10:03:21 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 10:03:21 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 10:04:44 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 10:04:44 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 10:08:35 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 10:08:35 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 10:18:06 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 10:18:06 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 10:18:22 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 10:18:22 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 10:18:23 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 10:18:23 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:02:32 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:02:32 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:02:45 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:02:53 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:14:03 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:03 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:14:08 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:14 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:17 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:19 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:23 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:26 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:26 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:27 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:27 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:28 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:28 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:29 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:30 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:30 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:31 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:36 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:14:36 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:36 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:14:37 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:37 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:14:38 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:41 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:42 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:43 +0000] [1363] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 11:14:46 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:14:46 +0000] [1363] [DEBUG] POST /skill/get_user_info
+[2019-10-22 11:14:49 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:53 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:14:54 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:55 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:14:56 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:14:57 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:14:57 +0000] [1363] [DEBUG] POST /skill/get_user_info
+[2019-10-22 11:14:58 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:14:59 +0000] [1363] [DEBUG] POST /skill/get_user_info
+[2019-10-22 11:15:00 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:00 +0000] [1363] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 11:15:02 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:15:03 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:05 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:15:06 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:07 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:15:08 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:10 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:15:11 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:12 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:15:14 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:16 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:15:18 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:18 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:15:20 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:22 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:15:24 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:25 +0000] [1363] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:15:26 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:27 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:27 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:15:27 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:27 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:15:29 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:29 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:30 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:15:30 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:31 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:31 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:15:32 +0000] [1363] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 11:15:34 +0000] [1363] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:34 +0000] [1363] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:15:36 +0000] [31982] [INFO] Handling signal: term
+[2019-10-22 11:15:36 +0000] [1363] [INFO] Worker exiting (pid: 1363)
+[2019-10-22 11:15:36 +0000] [31982] [INFO] Shutting down: Master
+[2019-10-22 11:15:39 +0000] [25526] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  disable_redirect_access_to_syslog: False
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fe650d8ab18>
+  errorlog: /root/open_task/errlog/err.log
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fe650d8a938>
+  pre_fork: <function pre_fork at 0x7fe650d8aa28>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  sendfile: None
+  reuse_port: False
+  worker_tmp_dir: None
+  group: 0
+  umask: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  workers: 1
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  proc_name: None
+  pre_exec: <function pre_exec at 0x7fe650d8aed8>
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7fe650d9d488>
+  logconfig: None
+  logconfig_dict: {}
+  config: gun.conf
+  pidfile: /root/open_task/task.pid
+  check_config: False
+  statsd_prefix: 
+  on_reload: <function on_reload at 0x7fe650d8a848>
+  reload_extra_files: []
+  accesslog: /root/open_task/errlog/access.log
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fe650d9d050>
+  post_request: <function post_request at 0x7fe650d9d0c8>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fe650d8acf8>
+  paste: None
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7fe650d8a758>
+  post_worker_init: <function post_worker_init at 0x7fe650d8ac08>
+  worker_abort: <function worker_abort at 0x7fe650d8ade8>
+  child_exit: <function child_exit at 0x7fe650d9d1b8>
+  worker_exit: <function worker_exit at 0x7fe650d9d2a8>
+  default_proc_name: task:app
+  loglevel: debug
+  syslog: False
+  syslog_prefix: None
+  chdir: /root/open_task
+  daemon: False
+  syslog_addr: udp://localhost:514
+  ciphers: TLSv1
+  bind: ['127.0.0.1:5236']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fe650d9d398>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2019-10-22 11:15:39 +0000] [25526] [INFO] Starting gunicorn 19.9.0
+[2019-10-22 11:15:39 +0000] [25526] [DEBUG] Arbiter booted
+[2019-10-22 11:15:39 +0000] [25526] [INFO] Listening at: http://127.0.0.1:5236 (25526)
+[2019-10-22 11:15:39 +0000] [25526] [INFO] Using worker: sync
+[2019-10-22 11:15:39 +0000] [25530] [INFO] Booting worker with pid: 25530
+[2019-10-22 11:15:39 +0000] [25526] [DEBUG] 1 workers
+[2019-10-22 11:15:41 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:44 +0000] [25530] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:15:44 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:48 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:48 +0000] [25530] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:15:53 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:15:55 +0000] [25530] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:15:56 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:16:02 +0000] [25530] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:16:04 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:16:06 +0000] [25530] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:16:08 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:16:12 +0000] [25530] [DEBUG] POST /skill/get_task_info
+[2019-10-22 11:16:14 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:17:48 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:17:50 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:17:51 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:17:53 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:17:54 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:20:01 +0000] [25530] [DEBUG] worker: SIGWINCH ignored.
+[2019-10-22 11:20:01 +0000] [25526] [INFO] Handling signal: winch
+[2019-10-22 11:20:01 +0000] [25526] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-10-22 11:20:06 +0000] [25530] [DEBUG] worker: SIGWINCH ignored.
+[2019-10-22 11:20:06 +0000] [25526] [INFO] Handling signal: winch
+[2019-10-22 11:20:06 +0000] [25526] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-10-22 11:20:06 +0000] [25530] [DEBUG] worker: SIGWINCH ignored.
+[2019-10-22 11:20:06 +0000] [25526] [INFO] Handling signal: winch
+[2019-10-22 11:20:06 +0000] [25526] [DEBUG] SIGWINCH ignored. Not daemonized
+[2019-10-22 11:24:44 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:24:44 +0000] [25530] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:24:45 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:26:03 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:26:03 +0000] [25530] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:26:11 +0000] [25530] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:28:18 +0000] [25526] [INFO] Handling signal: int
+[2019-10-22 11:28:18 +0000] [25530] [INFO] Worker exiting (pid: 25530)
+[2019-10-22 11:28:18 +0000] [25526] [INFO] Shutting down: Master
+[2019-10-22 11:28:18 +0000] [25824] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  disable_redirect_access_to_syslog: False
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fe02db92b18>
+  errorlog: /root/open_task/errlog/err.log
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fe02db92938>
+  pre_fork: <function pre_fork at 0x7fe02db92a28>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  sendfile: None
+  reuse_port: False
+  worker_tmp_dir: None
+  group: 0
+  umask: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  workers: 1
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  proc_name: None
+  pre_exec: <function pre_exec at 0x7fe02db92ed8>
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7fe02dba5488>
+  logconfig: None
+  logconfig_dict: {}
+  config: gun.conf
+  pidfile: /root/open_task/task.pid
+  check_config: False
+  statsd_prefix: 
+  on_reload: <function on_reload at 0x7fe02db92848>
+  reload_extra_files: []
+  accesslog: /root/open_task/errlog/access.log
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fe02dba5050>
+  post_request: <function post_request at 0x7fe02dba50c8>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fe02db92cf8>
+  paste: None
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7fe02db92758>
+  post_worker_init: <function post_worker_init at 0x7fe02db92c08>
+  worker_abort: <function worker_abort at 0x7fe02db92de8>
+  child_exit: <function child_exit at 0x7fe02dba51b8>
+  worker_exit: <function worker_exit at 0x7fe02dba52a8>
+  default_proc_name: task:app
+  loglevel: debug
+  syslog: False
+  syslog_prefix: None
+  chdir: /root/open_task
+  daemon: False
+  syslog_addr: udp://localhost:514
+  ciphers: TLSv1
+  bind: ['127.0.0.1:5236']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fe02dba5398>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2019-10-22 11:28:18 +0000] [25824] [INFO] Starting gunicorn 19.9.0
+[2019-10-22 11:28:18 +0000] [25824] [DEBUG] Arbiter booted
+[2019-10-22 11:28:18 +0000] [25824] [INFO] Listening at: http://127.0.0.1:5236 (25824)
+[2019-10-22 11:28:18 +0000] [25824] [INFO] Using worker: sync
+[2019-10-22 11:28:18 +0000] [25828] [INFO] Booting worker with pid: 25828
+[2019-10-22 11:28:18 +0000] [25824] [DEBUG] 1 workers
+[2019-10-22 11:38:09 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:38:09 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:53:56 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:53:56 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:54:10 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:54:10 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:54:40 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:54:40 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:55:33 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:55:33 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:56:36 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:56:36 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:56:45 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:56:57 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:56:57 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:57:11 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 11:59:20 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 11:59:20 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 12:02:31 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:02:36 +0000] [25828] [DEBUG] POST /skill/get_task_info
+[2019-10-22 12:02:37 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:02:38 +0000] [25828] [DEBUG] POST /skill/get_task_info
+[2019-10-22 12:02:39 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:02:40 +0000] [25828] [DEBUG] POST /skill/get_task_info
+[2019-10-22 12:02:41 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:02:42 +0000] [25828] [DEBUG] POST /skill/get_task_info
+[2019-10-22 12:02:43 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:02:44 +0000] [25828] [DEBUG] POST /skill/get_task_info
+[2019-10-22 12:02:45 +0000] [25828] [DEBUG] POST /skill/list_skills
+[2019-10-22 12:02:46 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:02:46 +0000] [25828] [DEBUG] POST /skill/get_task_info
+[2019-10-22 12:02:47 +0000] [25828] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:19:27 +0000] [25824] [INFO] Handling signal: hup
+[2019-10-22 12:19:27 +0000] [25824] [INFO] Hang up: Master
+[2019-10-22 12:19:27 +0000] [25824] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  disable_redirect_access_to_syslog: False
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fe02db92b18>
+  errorlog: /root/open_task/errlog/err.log
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fe02db92938>
+  pre_fork: <function pre_fork at 0x7fe02db92a28>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  sendfile: None
+  reuse_port: False
+  worker_tmp_dir: None
+  group: 0
+  umask: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  workers: 1
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  proc_name: None
+  pre_exec: <function pre_exec at 0x7fe02db92ed8>
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7fe02dba5488>
+  logconfig: None
+  logconfig_dict: {}
+  config: gun.conf
+  pidfile: /root/open_task/task.pid
+  check_config: False
+  statsd_prefix: 
+  on_reload: <function on_reload at 0x7fe02db92848>
+  reload_extra_files: []
+  accesslog: /root/open_task/errlog/access.log
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fe02dba5050>
+  post_request: <function post_request at 0x7fe02dba50c8>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fe02db92cf8>
+  paste: None
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7fe02db92758>
+  post_worker_init: <function post_worker_init at 0x7fe02db92c08>
+  worker_abort: <function worker_abort at 0x7fe02db92de8>
+  child_exit: <function child_exit at 0x7fe02dba51b8>
+  worker_exit: <function worker_exit at 0x7fe02dba52a8>
+  default_proc_name: task:app
+  loglevel: debug
+  syslog: False
+  syslog_prefix: None
+  chdir: /root/open_task
+  daemon: False
+  syslog_addr: udp://localhost:514
+  ciphers: TLSv1
+  bind: ['127.0.0.1:5236']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fe02dba5398>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2019-10-22 12:19:27 +0000] [25824] [INFO] Handling signal: hup
+[2019-10-22 12:19:27 +0000] [25824] [INFO] Hang up: Master
+[2019-10-22 12:19:27 +0000] [26090] [INFO] Booting worker with pid: 26090
+[2019-10-22 12:19:27 +0000] [25824] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  disable_redirect_access_to_syslog: False
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7fe02db92b18>
+  errorlog: /root/open_task/errlog/err.log
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7fe02db92938>
+  pre_fork: <function pre_fork at 0x7fe02db92a28>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  sendfile: None
+  reuse_port: False
+  worker_tmp_dir: None
+  group: 0
+  umask: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  workers: 1
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  proc_name: None
+  pre_exec: <function pre_exec at 0x7fe02db92ed8>
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7fe02dba5488>
+  logconfig: None
+  logconfig_dict: {}
+  config: gun.conf
+  pidfile: /root/open_task/task.pid
+  check_config: False
+  statsd_prefix: 
+  on_reload: <function on_reload at 0x7fe02db92848>
+  reload_extra_files: []
+  accesslog: /root/open_task/errlog/access.log
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7fe02dba5050>
+  post_request: <function post_request at 0x7fe02dba50c8>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7fe02db92cf8>
+  paste: None
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7fe02db92758>
+  post_worker_init: <function post_worker_init at 0x7fe02db92c08>
+  worker_abort: <function worker_abort at 0x7fe02db92de8>
+  child_exit: <function child_exit at 0x7fe02dba51b8>
+  worker_exit: <function worker_exit at 0x7fe02dba52a8>
+  default_proc_name: task:app
+  loglevel: debug
+  syslog: False
+  syslog_prefix: None
+  chdir: /root/open_task
+  daemon: False
+  syslog_addr: udp://localhost:514
+  ciphers: TLSv1
+  bind: ['127.0.0.1:5236']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7fe02dba5398>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2019-10-22 12:19:27 +0000] [26091] [INFO] Booting worker with pid: 26091
+[2019-10-22 12:19:27 +0000] [26090] [INFO] Worker exiting (pid: 26090)
+[2019-10-22 12:21:35 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:21:35 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 12:21:43 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:21:44 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 12:22:04 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 12:22:26 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:22:26 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 12:35:32 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 12:35:32 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 13:34:37 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 13:34:37 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 14:53:25 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 14:53:25 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 14:56:16 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 14:56:48 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 14:56:48 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 14:58:31 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 14:58:34 +0000] [26091] [DEBUG] POST /skill/get_task_info
+[2019-10-22 14:59:51 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 14:59:52 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 14:59:52 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:04:39 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:04:40 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:06:08 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:06:08 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:09:24 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:09:31 +0000] [26091] [DEBUG] POST /skill/get_task_info
+[2019-10-22 15:10:17 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:10:19 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:10:19 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:14:36 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:14:36 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:22:00 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:22:00 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:24:15 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:24:15 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:24:30 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:24:34 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:24:34 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:24:38 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:24:38 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:25:20 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:25:20 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:25:28 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:25:28 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-22 15:26:38 +0000] [26091] [DEBUG] POST /skill/update_user_info
+[2019-10-22 15:26:39 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-22 15:26:53 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:26:53 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-22 15:26:54 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:26:55 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:27:07 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 15:27:21 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:27:21 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:27:28 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:27:40 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:27:40 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 15:41:46 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 15:41:46 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:09:45 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:09:45 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:10:00 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:10:00 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:10:06 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:10:06 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:10:08 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:10:12 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:10:16 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:10:16 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:10:21 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 17:10:27 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:10:27 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:11:14 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:11:14 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:11:23 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 17:11:25 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:11:25 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:11:42 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:11:46 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:11:50 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:11:53 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:11:56 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:11:57 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:11:57 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:12:02 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 17:12:05 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 17:12:06 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 17:12:06 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:12:14 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:12:17 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 17:12:18 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:12:26 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 17:12:28 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:12:30 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 17:12:31 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:12:32 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 17:12:36 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-22 17:12:37 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:12:39 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 17:12:39 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 18:04:20 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 18:04:20 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 18:33:51 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 18:33:51 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 19:17:14 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 19:17:15 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 19:48:07 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-22 19:48:07 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 19:48:38 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-22 19:48:38 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 00:28:44 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-23 00:31:11 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-23 12:05:18 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 12:05:19 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 12:05:29 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 12:05:36 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 12:05:36 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 12:05:40 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 12:05:42 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 12:05:42 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 12:05:43 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 12:05:45 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 12:05:45 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 12:09:15 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 12:09:15 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 14:05:53 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 14:05:53 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 14:18:39 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 14:18:39 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 14:18:46 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 14:18:47 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 14:18:47 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 14:20:26 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 14:20:26 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 14:23:08 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 14:23:08 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 14:36:22 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 14:36:22 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 16:29:15 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 16:29:15 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 21:41:23 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 21:41:23 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 21:41:40 +0000] [26091] [DEBUG] GET /skill/get_messages
+[2019-10-23 21:41:40,664] ERROR in app: Exception on /skill/get_messages [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/open_task/task.py", line 168, in get_messages
+    page = request.json.get('page',1)
+AttributeError: 'NoneType' object has no attribute 'get'
+[2019-10-23 21:41:44 +0000] [26091] [DEBUG] GET /skill/get_messages
+[2019-10-23 21:41:44,249] ERROR in app: Exception on /skill/get_messages [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/open_task/task.py", line 168, in get_messages
+    page = request.json.get('page',1)
+AttributeError: 'NoneType' object has no attribute 'get'
+[2019-10-23 21:42:49 +0000] [26091] [DEBUG] GET /skill/list_skills
+[2019-10-23 21:42:49,333] ERROR in app: Exception on /skill/list_skills [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/open_task/task.py", line 43, in list_skills
+    if "s" in request.json:
+TypeError: argument of type 'NoneType' is not iterable
+[2019-10-23 21:42:57 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 21:42:57,261] ERROR in app: Exception on /skill/list_skills [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/open_task/task.py", line 43, in list_skills
+    if "s" in request.json:
+TypeError: argument of type 'NoneType' is not iterable
+[2019-10-23 21:43:40 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 21:43:40,664] ERROR in app: Exception on /skill/list_skills [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/open_task/task.py", line 43, in list_skills
+    if "s" in request.json:
+TypeError: argument of type 'NoneType' is not iterable
+[2019-10-23 21:44:40 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 21:44:40,423] ERROR in app: Exception on /skill/list_skills [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/open_task/task.py", line 43, in list_skills
+    if "s" in request.json:
+TypeError: argument of type 'NoneType' is not iterable
+[2019-10-23 21:45:29 +0000] [26091] [DEBUG] GET /skill/list_skills/get_messages
+[2019-10-23 21:45:33 +0000] [26091] [DEBUG] GET /skill/list_skills
+[2019-10-23 21:45:33,584] ERROR in app: Exception on /skill/list_skills [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/open_task/task.py", line 43, in list_skills
+    if "s" in request.json:
+TypeError: argument of type 'NoneType' is not iterable
+[2019-10-23 21:45:40 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 21:45:40 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 21:48:16 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 21:49:18 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 21:52:24 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 21:52:24,276] ERROR in app: Exception on /skill/list_skills [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python2.7/dist-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/open_task/task.py", line 43, in list_skills
+    if "s" in request.json:
+TypeError: argument of type 'NoneType' is not iterable
+[2019-10-23 21:55:47 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 21:55:47 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 21:56:10 +0000] [26091] [DEBUG] POST /skill/get_messages
+[2019-10-23 21:56:33 +0000] [26091] [DEBUG] POST /skill/get_messages
+[2019-10-23 22:09:57 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 22:09:57 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:12:26 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:12:30 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-23 22:12:31 +0000] [26091] [DEBUG] POST /skill/get_messages
+[2019-10-23 22:12:34 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:12:35 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-23 22:12:50 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-23 22:12:51 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:12:55 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-23 22:12:56 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:12:56 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-23 22:13:11 +0000] [26091] [DEBUG] POST /skill/update_user_info
+[2019-10-23 22:13:11 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-23 22:13:13 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:13:13 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-23 22:13:14 +0000] [26091] [DEBUG] POST /skill/update_user_info
+[2019-10-23 22:13:14 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-23 22:13:15 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:13:15 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-23 22:13:16 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-23 22:13:17 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:13:17 +0000] [26091] [DEBUG] POST /skill/get_user_info
+[2019-10-23 22:13:18 +0000] [26091] [DEBUG] POST /skill/skills_get_users
+[2019-10-23 22:13:19 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:13:20 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 22:13:21 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:13:36 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 22:13:36 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:31:26 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:31:26 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 22:31:30 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 22:31:32 +0000] [26091] [DEBUG] POST /skill/list_tasks
+[2019-10-23 22:31:32 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:31:33 +0000] [26091] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:42:46 +0000] [25824] [INFO] Handling signal: term
+[2019-10-23 22:42:46 +0000] [26091] [INFO] Worker exiting (pid: 26091)
+[2019-10-23 22:42:47 +0000] [25824] [INFO] Shutting down: Master
+[2019-10-23 22:42:56 +0000] [2451] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  disable_redirect_access_to_syslog: False
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f405519eb18>
+  errorlog: /root/open_task/errlog/err.log
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f405519e938>
+  pre_fork: <function pre_fork at 0x7f405519ea28>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  sendfile: None
+  reuse_port: False
+  worker_tmp_dir: None
+  group: 0
+  umask: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  workers: 1
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  proc_name: None
+  pre_exec: <function pre_exec at 0x7f405519eed8>
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7f40551b1488>
+  logconfig: None
+  logconfig_dict: {}
+  config: gun.conf
+  pidfile: /root/open_task/task.pid
+  check_config: False
+  statsd_prefix: 
+  on_reload: <function on_reload at 0x7f405519e848>
+  reload_extra_files: []
+  accesslog: /root/open_task/errlog/access.log
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f40551b1050>
+  post_request: <function post_request at 0x7f40551b10c8>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f405519ecf8>
+  paste: None
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7f405519e758>
+  post_worker_init: <function post_worker_init at 0x7f405519ec08>
+  worker_abort: <function worker_abort at 0x7f405519ede8>
+  child_exit: <function child_exit at 0x7f40551b11b8>
+  worker_exit: <function worker_exit at 0x7f40551b12a8>
+  default_proc_name: task:app
+  loglevel: debug
+  syslog: False
+  syslog_prefix: None
+  chdir: /root/open_task
+  daemon: False
+  syslog_addr: udp://localhost:514
+  ciphers: TLSv1
+  bind: ['127.0.0.1:5236']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f40551b1398>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2019-10-23 22:42:56 +0000] [2451] [INFO] Starting gunicorn 19.9.0
+[2019-10-23 22:42:56 +0000] [2451] [DEBUG] Arbiter booted
+[2019-10-23 22:42:56 +0000] [2451] [INFO] Listening at: http://127.0.0.1:5236 (2451)
+[2019-10-23 22:42:56 +0000] [2451] [INFO] Using worker: sync
+[2019-10-23 22:42:56 +0000] [2455] [INFO] Booting worker with pid: 2455
+[2019-10-23 22:42:56 +0000] [2451] [DEBUG] 1 workers
+[2019-10-23 22:43:26 +0000] [2455] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:43:39 +0000] [2455] [DEBUG] POST /skill/get_messages
+[2019-10-23 22:47:13 +0000] [2455] [DEBUG] POST /skill/get_messages
+[2019-10-23 22:49:28 +0000] [2455] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:49:28 +0000] [2455] [DEBUG] POST /skill/list_tasks
+[2019-10-23 22:50:00 +0000] [2455] [DEBUG] POST /skill/list_tasks
+[2019-10-23 22:50:00 +0000] [2455] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:50:53 +0000] [2455] [DEBUG] POST /skill/list_skills
+[2019-10-23 22:50:53 +0000] [2455] [DEBUG] POST /skill/list_tasks
+[2019-10-23 22:51:30 +0000] [2455] [DEBUG] POST /skill/list_tasks
+[2019-10-23 22:51:30 +0000] [2455] [DEBUG] POST /skill/list_skills
+[2019-10-24 00:54:17 +0000] [2451] [INFO] Handling signal: hup
+[2019-10-24 00:54:17 +0000] [2451] [INFO] Hang up: Master
+[2019-10-24 00:54:17 +0000] [2451] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  disable_redirect_access_to_syslog: False
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f405519eb18>
+  errorlog: /root/open_task/errlog/err.log
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f405519e938>
+  pre_fork: <function pre_fork at 0x7f405519ea28>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  sendfile: None
+  reuse_port: False
+  worker_tmp_dir: None
+  group: 0
+  umask: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  workers: 1
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  proc_name: None
+  pre_exec: <function pre_exec at 0x7f405519eed8>
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7f40551b1488>
+  logconfig: None
+  logconfig_dict: {}
+  config: gun.conf
+  pidfile: /root/open_task/task.pid
+  check_config: False
+  statsd_prefix: 
+  on_reload: <function on_reload at 0x7f405519e848>
+  reload_extra_files: []
+  accesslog: /root/open_task/errlog/access.log
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f40551b1050>
+  post_request: <function post_request at 0x7f40551b10c8>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f405519ecf8>
+  paste: None
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7f405519e758>
+  post_worker_init: <function post_worker_init at 0x7f405519ec08>
+  worker_abort: <function worker_abort at 0x7f405519ede8>
+  child_exit: <function child_exit at 0x7f40551b11b8>
+  worker_exit: <function worker_exit at 0x7f40551b12a8>
+  default_proc_name: task:app
+  loglevel: debug
+  syslog: False
+  syslog_prefix: None
+  chdir: /root/open_task
+  daemon: False
+  syslog_addr: udp://localhost:514
+  ciphers: TLSv1
+  bind: ['127.0.0.1:5236']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f40551b1398>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2019-10-24 00:54:17 +0000] [2451] [INFO] Handling signal: hup
+[2019-10-24 00:54:17 +0000] [2451] [INFO] Hang up: Master
+[2019-10-24 00:54:17 +0000] [3146] [INFO] Booting worker with pid: 3146
+[2019-10-24 00:54:17 +0000] [2451] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  disable_redirect_access_to_syslog: False
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x7f405519eb18>
+  errorlog: /root/open_task/errlog/err.log
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 2
+  suppress_ragged_eofs: True
+  syslog_facility: user
+  when_ready: <function when_ready at 0x7f405519e938>
+  pre_fork: <function pre_fork at 0x7f405519ea28>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  sendfile: None
+  reuse_port: False
+  worker_tmp_dir: None
+  group: 0
+  umask: 0
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  workers: 1
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  proc_name: None
+  pre_exec: <function pre_exec at 0x7f405519eed8>
+  limit_request_fields: 100
+  pythonpath: None
+  on_exit: <function on_exit at 0x7f40551b1488>
+  logconfig: None
+  logconfig_dict: {}
+  config: gun.conf
+  pidfile: /root/open_task/task.pid
+  check_config: False
+  statsd_prefix: 
+  on_reload: <function on_reload at 0x7f405519e848>
+  reload_extra_files: []
+  accesslog: /root/open_task/errlog/access.log
+  reload_engine: auto
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x7f40551b1050>
+  post_request: <function post_request at 0x7f40551b10c8>
+  user: 0
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x7f405519ecf8>
+  paste: None
+  raw_paste_global_conf: []
+  threads: 1
+  max_requests: 0
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  on_starting: <function on_starting at 0x7f405519e758>
+  post_worker_init: <function post_worker_init at 0x7f405519ec08>
+  worker_abort: <function worker_abort at 0x7f405519ede8>
+  child_exit: <function child_exit at 0x7f40551b11b8>
+  worker_exit: <function worker_exit at 0x7f40551b12a8>
+  default_proc_name: task:app
+  loglevel: debug
+  syslog: False
+  syslog_prefix: None
+  chdir: /root/open_task
+  daemon: False
+  syslog_addr: udp://localhost:514
+  ciphers: TLSv1
+  bind: ['127.0.0.1:5236']
+  raw_env: []
+  initgroups: False
+  capture_output: False
+  reload: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x7f40551b1398>
+  timeout: 30
+  keyfile: None
+  ca_certs: None
+  tmp_upload_dir: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+[2019-10-24 00:54:17 +0000] [3147] [INFO] Booting worker with pid: 3147
+[2019-10-24 00:54:18 +0000] [3146] [INFO] Worker exiting (pid: 3146)
+[2019-10-24 03:12:52 +0000] [3147] [DEBUG] POST /skill/list_tasks
+[2019-10-24 03:12:52 +0000] [3147] [DEBUG] POST /skill/list_skills
+[2019-10-24 10:46:04 +0000] [3147] [DEBUG] POST /skill/list_tasks
+[2019-10-24 10:46:04 +0000] [3147] [DEBUG] POST /skill/list_skills
+[2019-10-24 10:56:00 +0000] [3147] [DEBUG] POST /skill/list_skills
+[2019-10-24 10:56:00 +0000] [3147] [DEBUG] POST /skill/list_tasks
+[2019-10-24 10:58:05 +0000] [3147] [DEBUG] POST /skill/list_skills
+[2019-10-24 10:58:05 +0000] [3147] [DEBUG] POST /skill/list_tasks
+[2019-10-24 10:58:15 +0000] [3147] [DEBUG] POST /skill/list_skills
+[2019-10-24 10:58:15 +0000] [3147] [DEBUG] POST /skill/list_tasks
+[2019-10-24 11:28:43 +0000] [3147] [DEBUG] POST /skill/list_tasks
+[2019-10-24 11:28:43 +0000] [3147] [DEBUG] POST /skill/list_skills
+[2019-10-24 11:28:45 +0000] [3147] [DEBUG] POST /skill/list_skills
+[2019-10-24 11:52:50 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 11:57:50 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 11:58:18 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 11:58:24 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 11:58:58 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 11:59:11 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 12:00:21 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 12:00:24 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:03:46 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:05:52 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:07:40 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:07:56 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 12:07:57 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:08:04 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 12:08:06 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:08:14 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 12:08:16 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:08:33 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 12:08:34 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:08:34 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:09:46 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:09:50 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:09:55 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:09:58 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:10:10 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 12:10:10 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:10:12 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:10:24 +0000] [3147] [DEBUG] POST /skill/leave_message
+[2019-10-24 12:10:25 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:10:25 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:11:14 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 12:11:16 +0000] [3147] [DEBUG] POST /skill/get_messages
+[2019-10-24 13:58:13 +0000] [3147] [DEBUG] POST /skill/list_skills
+[2019-10-24 13:58:14 +0000] [3147] [DEBUG] POST /skill/list_tasks
+[2019-10-24 13:58:14 +0000] [3147] [DEBUG] POST /skill/list_skills

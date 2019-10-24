@@ -13,6 +13,7 @@ client = pymongo.MongoClient('127.0.0.1', 27017)
 skill_db = client.open_task.skill
 user_db = client.open_task.user
 task_db = client.open_task.task
+message_db = client.open_task.message
 
 def new_line(db_name):
     dic = {}
@@ -153,7 +154,24 @@ def search_task():
     database.close()
     return jsonify({"state":True,"missions":missions})
     
+@app.route("/skill/leave_message",methods=["GET","POST"])
+def leave_message():
+    content = request.json.get('content')
+    address = request.json.get('address')
+    message_db.insert(insert_cover('message',{'content':content,'address':address}))
 
+    return jsonify({"state":True})
+    
+
+@app.route("/skill/get_messages",methods=["GET","POST"])
+def get_messages():
+    page = request.json.get('page',1)
+    page_amount = request.json.get('count',20)
+
+    messages = list(message_db.find({'state':True},{"_id":False}).skip(page_amount*(page-1)).limit(page_amount))
+    count = message_db.find({'state':True}).count()
+    return jsonify({"state":True,"messages":messages,"count":count})
+    
 
 
 
