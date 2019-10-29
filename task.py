@@ -14,6 +14,7 @@ skill_db = client.open_task.skill
 user_db = client.open_task.user
 task_db = client.open_task.task
 message_db = client.open_task.message
+game_db = client.open_task.game
 
 def new_line(db_name):
     dic = {}
@@ -158,7 +159,7 @@ def search_task():
 def leave_message():
     content = request.json.get('content')
     address = request.json.get('address')
-    message_db.insert(insert_cover('message',{'content':content,'address':address}))
+    message_db.insert(insert_cover('message',{'content':content,'address':address,'reply':""}))
 
     return jsonify({"state":True})
     
@@ -171,12 +172,32 @@ def get_messages():
     messages = list(message_db.find({'state':True},{"_id":False}).sort([("id",-1)]).skip(page_amount*(page-1)).limit(page_amount))
     for x in messages:
         x['create_time'] = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(x['create_time']))
-
+        x['reply'] = x.get("reply","")
     count = message_db.find({'state':True}).count()
     return jsonify({"state":True,"messages":messages,"count":count})
     
 
+@app.route("/skill/add_game_card",methods=["GET","POST"])
+def add_game_card():
+    info = request.json.get('info')
+    game_db.insert(insert_cover('game_exchange',info))
+    return jsonify({"state":True})
+    
 
+@app.route("/skill/get_game_card",methods=["GET","POST"])
+def get_game_card():
+    info = list(game_db.find({},{"_id":False}).sort([("id",-1)]))
+    for x in info:
+        str_len = len(x['contact'])
+        if str_len>3:
+            inter = int(str_len/3)
+            contact = x['contact']
+            contact = contact[0:inter]+"****"+contact[(-1*inter):]
+            x['contact'] = contact
+        else:
+            x['contact'] = "***"
+    return jsonify({"state":True,"info":info})
+    
 
 
 
