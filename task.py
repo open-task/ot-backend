@@ -55,13 +55,13 @@ def list_tasks():
     page_amount = 10
 
     if type_=='solved':
-        missions = list(Mission().select().where(Mission.solved>0).order_by(-Mission.updatetime).paginate(page, page_amount))
+        missions = list(Mission().select().where(Mission.solved>0,Mission.filter==0).order_by(-Mission.updatetime).paginate(page, page_amount))
     elif type_ == 'published':
-        missions = list(Mission().select().where(Mission.solved==0 , Mission.solution_num==0).order_by(-Mission.updatetime).paginate(page, page_amount))
+        missions = list(Mission().select().where(Mission.solved==0 , Mission.solution_num==0,Mission.filter==0).order_by(-Mission.updatetime).paginate(page, page_amount))
     elif type_ == 'unsolved':
-        missions = list(Mission().select().where(Mission.solved==0 ,Mission.solution_num>0).order_by(-Mission.updatetime).paginate(page, page_amount))
+        missions = list(Mission().select().where(Mission.solved==0 ,Mission.solution_num>0,Mission.filter==0).order_by(-Mission.updatetime).paginate(page, page_amount))
     else:
-        missions = list(Mission().select().order_by(-Mission.updatetime).where(1).paginate(page, page_amount))
+        missions = list(Mission().select().where(Mission.filter==0).order_by(-Mission.updatetime).where(1).paginate(page, page_amount))
 
     database.close()
     missions = sorted([model_to_dict(x) for x in missions],key=lambda s: s['block'],reverse=True)
@@ -148,7 +148,7 @@ def search_task():
     page_amount = 20
     a = "%"+q+"%" 
     print(a)
-    missions = list(Mission().select().order_by(-Mission.updatetime).where(Mission.context  ** str(a)).paginate(page, page_amount))
+    missions = list(Mission().select().order_by(-Mission.updatetime).where(Mission.context  ** str(a),Mission.filter==0).paginate(page, page_amount))
     missions = sorted([model_to_dict(x) for x in missions],key=lambda s: s['block'],reverse=True)
     for x in missions:
         x['reward'] = str(x['reward'])
