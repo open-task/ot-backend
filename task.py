@@ -15,6 +15,13 @@ user_db = client.open_task.user
 task_db = client.open_task.task
 message_db = client.open_task.message
 game_db = client.open_task.game
+# 问答相关
+question_db = client.open_task.question
+answer_db = client.open_task.question
+# 拍卖相关
+pai_db = client.open_task.paimai
+bid_db = client.open_task.bid
+
 
 def new_line(db_name):
     dic = {}
@@ -200,7 +207,118 @@ def get_game_card():
     
 
 
+# 问答模块
 
+# 创建问答
+@app.route("/question/new_question",methods=["GET","POST"])
+def new_question():
+    key_list = ['address','title','content','reward']
+    info = {
+    'question':"waiting"
+    }
+    for x in key_list:
+        info[x] = request.json.get(x)
+    
+    q = question_db.insert(insert_cover('question',info))
+    q_id = q.get("id")
+    return jsonify({"state":True,'question_id':q_id})
+
+# 获取单个问题
+
+@app.route("/question/get_question",methods=["GET","POST"])
+def get_question():
+    question_id = request.json.get("question_id")
+    q = question_db.find_one({'id':question_id,'state':True},{"_id":False})
+    answers = list(answer_db.find({'question_id':question_id,'state':True},{"_id":False}))
+    q['answers'] = answers
+
+    return jsonify({"state":True,'question':q})
+
+# 获取任务列表
+@app.route("/question/get_question_list",methods=["GET","POST"])
+def get_question_list():
+    page_size = request.json.get('page_size',20)
+    page = request.json.get('page',1)-1
+    info = {'state':True}
+
+    reward_section = request.json.get("reward_section",None)
+    if reward_section:
+        reward_section = reward_section.split('-')
+        info['reward'] = {"$gt":reward_section[0],'$lt':reward_section[1]}
+    question_state = request.json.get("question_state",None)
+    if question_state:
+        info['question_state'] = question_state
+
+
+    q = list(question_db.find(info,{"_id":False}).limit(page_size).skip(page*page_size))
+    for x in q:
+        q_id = x['question_id']
+        a_list = list(answer_db.find({'question_id':q_id,'state':True}))
+        x['answer_amount'] = len(a_list)
+
+    return jsonify({"state":True,'question':q})
+    
+
+    
+
+
+# 提交答案
+@app.route("/question/answer",methods=["GET","POST"])
+def answer():
+    key_list = ['address','answer','question_id']
+    info = {
+    "selected":False
+    }
+    for x in key_list:
+        info[x] = request.json.get(x)
+    
+
+    a = answer_db.insert(insert_cover('answer',info))
+    a_id = a.get('id')
+
+    return jsonify({"state":True,'answer_id':a_id})
+    
+# 接受答案,好像只能通过线上确认
+# ??
+
+# 币名拍卖
+@app.route("/skill/get_coin_name_list",methods=["GET","POST"])
+def get_coin_name_list():
+    coin_list = list(pai_db.find({"state":True},{'_id':False}))
+    return jsonify({"state":True,"coin":coin_list})
+
+@app.route("/skill/get_coin_info",methods=["GET","POST"])
+def get_coin_info():
+    name = request.json.get("name")
+    coin_info = pai_db.find_one({'name':name},{"_id":False})
+    bid_list = list(bid_db.find({'pai_id':coin_info['id'],'state':True},{"_id":False}).sort('charge',-1))
+    for x in bid_list:
+        str_len = len(x['contact'])
+        if str_len>3:
+            inter = int(str_len/3)
+            contact = x['contact']
+            contact = contact[0:inter]+"****"+contact[(-1*inter):]
+            x['contact'] = contact
+        else:
+            x['contact'] = "***"
+    price_max =bid_list[0]['charge'] if len(bid_list) else coin_info['basic']
+    coin_info['max'] = price_max
+    return jsonify({"state":True,'coin_info':coin_info,'bid_list':bid_list})
+    
+
+@app.route("/skill/pai",methods=["GET","POST"])
+def pai():
+    name = request.json.get("name")
+    c = pai_db.find_one({'name':name},{"_id":False})
+    pai_id = c['id']
+    info = {'name':c['name'],'basic':c['basic'],'pai_id':pai_id}
+    key_list = ['charge','contact_type','contact','rise']
+    for x in key_list:
+        info[x] = request.json.get(x)
+
+    bid_db.insert_one(insert_cover('bid',info))
+    return jsonify({"state":True})
+    
 
 
 
