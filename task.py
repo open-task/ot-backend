@@ -2,7 +2,7 @@
 from flask import Flask,request,render_template,session,jsonify
 import random, redis, pymongo,time
 from werkzeug import secure_filename
-import os,time
+import os,time,json
 from testModel import *
 from playhouse.shortcuts import dict_to_model, model_to_dict
 
@@ -21,6 +21,8 @@ answer_db = client.open_task.question
 # 拍卖相关
 pai_db = client.open_task.paimai
 bid_db = client.open_task.bid
+
+log_db = client.open_task.log
 
 
 def new_line(db_name):
@@ -317,6 +319,24 @@ def pai():
         info[x] = request.json.get(x)
 
     bid_db.insert_one(insert_cover('bid',info))
+    return jsonify({"state":True})
+    
+@app.route("/skill/add_log",methods=["GET","POST"])
+def add_log():
+    print('添加日志')
+    info_list = json.loads(request.form.get("log_list"))
+    try:
+        max_id = int(redis_db.get('block_number'))
+    except:
+        max_id = 0
+    t = 0
+    useful_info = sorted([x for x in info_list if int(x['block_number']) > max_id],key=lambda a:a['block_number'])
+    id_list= [x['block_number'] for x in useful_info]
+    for x in useful_info:
+        log_db.insert(x)
+        t+=1
+        redis_db.set("block_number",int(x['block_number']))
+
     return jsonify({"state":True})
     
 
