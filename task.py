@@ -25,6 +25,11 @@ bid_db = client.open_task.bid
 log_db = client.open_task.log
 
 
+# 任务相关
+mission_db = client.open_task.mission
+solution_db = client.open_task.solution
+
+
 def new_line(db_name):
     dic = {}
     up_no = redis_db.incr(db_name + "_number")
@@ -59,24 +64,17 @@ def list_skills():
 
 @app.route("/skill/list_tasks",methods=["GET","POST"])
 def list_tasks():
-    type_ = request.json.get("type")
-    page = request.json.get('page',1)
+    type_ = request.json.get("type",'all')
+    page = int(request.json.get('page',1))-1
     page_amount = 10
+    f = {'state':True}
+    if type_ != 'all':
 
-    if type_=='solved':
-        missions = list(Mission().select().where(Mission.solved>0,Mission.filter==0).order_by(-Mission.updatetime).paginate(page, page_amount))
-    elif type_ == 'published':
-        missions = list(Mission().select().where(Mission.solved==0 , Mission.solution_num==0,Mission.filter==0).order_by(-Mission.updatetime).paginate(page, page_amount))
-    elif type_ == 'unsolved':
-        missions = list(Mission().select().where(Mission.solved==0 ,Mission.solution_num>0,Mission.filter==0).order_by(-Mission.updatetime).paginate(page, page_amount))
-    else:
-        missions = list(Mission().select().where(Mission.filter==0).order_by(-Mission.updatetime).where(1).paginate(page, page_amount))
+        f['task_state'] = type_
+    missions = list(mission_db.find(f,{"_id":False}).sort("timestamp",-1).limit(page_amount).skip(page*page_amount))
+    print(missions)
+  
 
-    database.close()
-    missions = sorted([model_to_dict(x) for x in missions],key=lambda s: s['block'],reverse=True)
-
-    for x in missions:
-        x['reward'] = str(x['reward'])
     
     return jsonify({"state":True,"missions":missions})
     
@@ -122,23 +120,45 @@ def update_user_info():
 
 
 @app.route("/skill/add_task",methods=["GET","POST"])
-def add_skill():
+def add_task():
     skill_old = [x['name'] for x in skill_db.find({})]
     skills = request.json.get('skill')
-    id_ = request.json.get("id")
     skill_new = [x for x in skills if x not in skill_old]
     for x in skill_new:
-        skill_db.insert(insert_cover("skill",{'name':x,"count":1}))
-    task_db.insert(insert_cover("task",{'task_id':id_,"skills":skills}))
+        skill_db.insert_one(insert_cover("skill",{'name':x,"count":1}))
+    info = {
+        "missionId":request.json.get("id"),
+        'title':request.json.get('title'),
+        'desc':request.json.get('desc'),
+        'skill':skills,
+        'author':request.json.get('author'),
+        'timestamp':int(time.time()),
+        'reward':request.json.get('reward'),
+        'task_state':'waiting_chain'
+        }
+    mission_db.insert_one(insert_cover("mission",info))
+    return jsonify({"state":True})
+    
+@app.route("/skill/add_solution",methods=["GET","POST"])
+def add_solution():
+    info = {
+        "missionId":request.json.get('missionId'),
+        'solutionId':request.json.get('solutionId'),
+        "content":request.json.get('content'),
+        'timestamp':int(time.time()),
+        'author':request.json.get('author'),
+        'solution_state':'waiting_chain'
+        }
+    solution_db.insert_one(insert_cover('solution',info))
     return jsonify({"state":True})
     
 
 @app.route("/skill/get_task_info",methods=["GET","POST"])
 def get_task_info():
     id_ = request.json.get("id")
-    task = task_db.find_one({'task_id':id_},{"_id":False})
-    print(task)
-    return jsonify({"state":True,"task":task})
+    task = mission_db.find_one({'missionId':id_},{"_id":False})
+    solutions = list(solution_db.find({"missionId":id_,'solution_state':{"$in":['published','accept','reject']}},{"_id":False}))
+    return jsonify({"state":True,"task":task,"solutions":solutions})
     
 
 
@@ -168,7 +188,7 @@ def search_task():
 def leave_message():
     content = request.json.get('content')
     address = request.json.get('address')
-    message_db.insert(insert_cover('message',{'content':content,'address':address,'reply':""}))
+    message_db.insert_one(insert_cover('message',{'content':content,'address':address,'reply':""}))
 
     return jsonify({"state":True})
     
@@ -189,7 +209,7 @@ def get_messages():
 @app.route("/skill/add_game_card",methods=["GET","POST"])
 def add_game_card():
     info = request.json.get('info')
-    game_db.insert(insert_cover('game_exchange',info))
+    game_db.insert_one(insert_cover('game_exchange',info))
     return jsonify({"state":True})
     
 
@@ -221,7 +241,7 @@ def new_question():
     for x in key_list:
         info[x] = request.json.get(x)
     
-    q = question_db.insert(insert_cover('question',info))
+    q = question_db.insert_one(insert_cover('question',info))
     q_id = q.get("id")
     return jsonify({"state":True,'question_id':q_id})
 
@@ -275,7 +295,7 @@ def answer():
         info[x] = request.json.get(x)
     
 
-    a = answer_db.insert(insert_cover('answer',info))
+    a = answer_db.insert_one(insert_cover('answer',info))
     a_id = a.get('id')
 
     return jsonify({"state":True,'answer_id':a_id})
@@ -321,6 +341,7 @@ def pai():
     bid_db.insert_one(insert_cover('bid',info))
     return jsonify({"state":True})
     
+
 @app.route("/skill/add_log",methods=["GET","POST"])
 def add_log():
     print('添加日志')
@@ -330,10 +351,50 @@ def add_log():
     except:
         max_id = 0
     t = 0
+    
+
+
+    max_id = 15466558
     useful_info = sorted([x for x in info_list if int(x['block_number']) > max_id],key=lambda a:a['block_number'])
+    # useful_info = info_list
+    publish = [x for x in useful_info if x['fn_name'] == 'publish']
+    accept = [x for x in useful_info if x['fn_name'] == 'accept']
+    reject = [x for x in useful_info if x['fn_name'] == 'reject']
+    solve = [x for x in useful_info if x['fn_name'] == 'solve']
+
+
+    m_id = 0
+    for x in publish:
+        fn_type = x['data'].get("fn_type",'task')
+        if fn_type == "task":
+            print(x)
+            missionId = x['data']['missionId']
+            mission_db.update_one({"missionId":missionId,"task_state":"waiting_chain"},{"$set":{"task_state":"published"}})
+            # 将上chanin的数据改为waiting
+    for x in solve:
+        fn_type = x['data'].get("fn_type",'task')
+        if fn_type == "task":
+            missionId = x['data']['missionId']
+            solutionId = x['data']['solutionId']
+            solution_db.update_one({"missionId":missionId,'solutionId':solutionId,"solution_state":"waiting_chain"},{"$set":{"solution_state":"published"}})
+    for x in accept:
+        fn_type= x['data'].get("fn_type",'task')
+        if fn_type == "task":
+            solutionId = x['data']['solutionId']
+            task = solution_db.find_one({'solutionId':solutionId})
+            missionId = task['missionId']
+            solution_db.update_one({'solutionId':solutionId},{'$set':{'solution_state':"accept"}})
+            mission_db.update_one({"missionId":missionId},{"$set":{'solutionId':solutionId,'task_state':"success"}})
+    for x in reject:
+        fn_type= x['data'].get("fn_type",'task')
+        if fn_type == "task":
+            solutionId = x['data']['solutionId']
+            solution_db.update_one({'solutionId':solutionId},{'$set':{'solution_state':"reject"}})
+
+
     id_list= [x['block_number'] for x in useful_info]
     for x in useful_info:
-        log_db.insert(x)
+        log_db.insert_one(x)
         t+=1
         redis_db.set("block_number",int(x['block_number']))
 
@@ -344,3 +405,11 @@ def add_log():
 
 if __name__ == "__main__":
     app.run(debug=True,port=5236)
+
+
+
+
+
+
+
+
