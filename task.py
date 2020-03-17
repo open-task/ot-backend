@@ -29,6 +29,34 @@ mission_db = client.open_task.mission
 solution_db = client.open_task.solution
 
 
+def get_user_detail(user_info):
+    if not user_info:
+        return jsonify({"state":False,"user_info":{}})
+    address = user_info['address']
+
+    # 获取task的信息
+    tasks = list(mission_db.find({"author":address},{"_id":False}))
+    task_count = len(tasks) #总task数量
+    task_sloved = [x for x in tasks if x['task_state'] == 'success']
+
+    paid = sum([int(x['reward']) for x in tasks])# 这里是总支出
+    solutions = list(solution_db.find({'author':address},{"_id":False}))
+    solution_count = len(solutions)
+    accept_list = [x['missionId'] for x in solutions if x['solution_state']=='accept']
+    accept_count = len(accept_list)
+    rewards = list(mission_db.find({'missionId':{"$in":accept_list}},{"_id":False}))
+    reward = sum([int(x['reward']) for x in rewards])
+    # 获取question的信息
+    questions = list(question_db.find({},{"_id":False}))
+    answers = list(answer_db.find({},{"_id":False}))
+    answer_accept = [x for x in answers if x['answer_state'] == 'accept']
+
+    user_info['task'] = {"task_count":task_count,"solution_count":solution_count,'solution_accept_count':accept_count,"task_sloved":len(task_sloved)}
+    user_info['question'] = {'question_count':len(questions),'answer_count':len(answers),'answer_accept_count':len(answer_accept)}
+    user_info["paid"] = paid
+    user_info["reward"] = reward
+    return user_info
+
 def new_line(db_name):
     dic = {}
     up_no = redis_db.incr(db_name + "_number")
@@ -72,7 +100,8 @@ def list_tasks():
     page_amount = int(request.json.get("count",10))
     f = {'state':True}
     if type_ == 'all':
-        f['task_state'] = {"$nin":['waiting_chain']}
+        # f['task_state'] = {"$nin":['waiting_chain']}
+        f['task_state'] = {"$nin":[]}
     else:
         f['task_state'] = type_
 
@@ -107,7 +136,16 @@ def get_users():
     skill = request.json.get("skill")
     page = request.json.get('page',1)
     page_size = request.json.get('count',20)
-    user_list = list(user_db.find({"skill":skill},{"_id":False}).skip((page-1)*page_size).limit(page_size))
+    f = {"skill":skill}
+
+    address = request.json.get("address")
+    if address:
+        f['address'] = address
+    user_list = list(user_db.find(f,{"_id":False}).skip((page-1)*page_size).limit(page_size))
+    new_user_list = []
+    for x in user_list:
+        user_info = get_user_detail(x)
+        new_user_list.append(user_info)
     count = user_db.find({"skill":skill},{"_id":False}).count()
     return jsonify({"state":True,'user_list':user_list,"count":count})
 
@@ -151,14 +189,16 @@ def update_user_info():
 
 @app.route("/skill/add_task",methods=["GET","POST"])
 def add_task():
-    skill_old = [x['name'] for x in skill_db.find({})]
-    skills = request.json.get('skill')
     print(request.json)
+    skill_old = [x['name'] for x in skill_db.find({})]
+    skills = request.json.get('skill',[])
+    print(request.json)
+
     skill_new = [x for x in skills if x not in skill_old]
     for x in skill_new:
         skill_db.insert_one(insert_cover("skill",{'name':x,"count":1}))
     info = {
-        "missionId":request.json.get("id"),
+        "missionId":request.json.get("missionId"),
         'title':request.json.get('title'),
         'desc':request.json.get('desc'),
         'skill':skills,
@@ -173,6 +213,7 @@ def add_task():
     
 @app.route("/skill/add_solution",methods=["GET","POST"])
 def add_solution():
+    print("add_solution",request.json)
     id_ =  request.json.get('missionId')
     info = {
         "missionId":id_,
@@ -192,7 +233,7 @@ def add_solution():
 def get_task_info():
     id_ = request.json.get("id")
     task = mission_db.find_one({'missionId':id_},{"_id":False})
-    solutions = list(solution_db.find({"missionId":id_,'solution_state':{"$in":['published','accept','reject']}},{"_id":False}))
+    solutions = list(solution_db.find({"missionId":id_,'solution_state':{"$in":['published','accept','reject','waiting_chain']}},{"_id":False}))
     return jsonify({"state":True,"task":task,"solutions":solutions})
     
 
@@ -201,29 +242,7 @@ def get_task_info():
 def get_user_info():
     address = request.json.get('address')
     user_info = user_db.find_one({"address":address},{"_id":False})
-    if not user_info:
-        return jsonify({"state":False,"user_info":{}})
-    print("user_info",user_info,address)
-    # 获取task的信息
-    tasks = list(mission_db.find({"author":address},{"_id":False}))
-    task_count = len(tasks) #总task数量
-    paid = sum([int(x['reward']) for x in tasks])# 这里是总支出
-    solutions = list(solution_db.find({'author':address},{"_id":False}))
-    solution_count = len(solutions)
-    accept_list = [x['missionId'] for x in solutions if x['solution_state']=='accept']
-    accept_count = len(accept_list)
-    rewards = list(mission_db.find({'missionId':{"$in":accept_list}},{"_id":False}))
-    reward = sum([int(x['reward']) for x in rewards])
-    print(rewards,accept_list)
-    # 获取question的信息
-    questions = list(question_db.find({},{"_id":False}))
-    answers = list(answer_db.find({},{"_id":False}))
-    answer_accept = [x for x in answers if x['answer_state'] == 'accept']
-
-    user_info['task'] = {"task_count":task_count,"solution_count":solution_count,'solution_accept_count':accept_count}
-    user_info['question'] = {'question_count':len(questions),'answer_count':len(answers),'answer_accept_count':len(answer_accept)}
-    user_info["paid"] = paid
-    user_info["reward"] = reward
+    user_info = get_user_detail(user_info)
 
 
 
@@ -293,7 +312,7 @@ def get_game_card():
 # 问答模块
 
 # 创建问答
-@app.route("/question/new_question",methods=["GET","POST"])
+@app.route("/skill/new_question",methods=["GET","POST"])
 def new_question():
     key_list = ['address','title','content','reward',"missionId"]
     info = {
@@ -310,7 +329,7 @@ def new_question():
 
 # 获取单个问题
 
-@app.route("/question/get_question",methods=["GET","POST"])
+@app.route("/skill/get_question",methods=["GET","POST"])
 def get_question():
     print(request.json)
     question_id = request.json.get("question_id")
@@ -323,7 +342,7 @@ def get_question():
     return jsonify({"state":True,'question':q})
 
 # 获取问答列表
-@app.route("/question/get_question_list",methods=["GET","POST"])
+@app.route("/skill/get_question_list",methods=["GET","POST"])
 def get_question_list():
     page_size = request.json.get('count',20)
     page = request.json.get('page',1)-1
@@ -367,7 +386,7 @@ def get_question_list():
     return jsonify({"state":True,'question':q,'count':count})
 
 # 提交答案
-@app.route("/question/answer",methods=["GET","POST"])
+@app.route("/skill/answer",methods=["GET","POST"])
 def answer():
     info = {
         
@@ -428,7 +447,6 @@ def pai():
 
 @app.route("/skill/add_log",methods=["GET","POST"])
 def add_log():
-    print('添加日志')
     info_list = json.loads(request.form.get("log_list"))
     try:
         max_id = int(redis_db.get('block_number'))
@@ -438,8 +456,9 @@ def add_log():
     
 
 
-    # max_id = 15795790
+    # max_id = 17436270
     useful_info = sorted([x for x in info_list if int(x['block_number']) > max_id],key=lambda a:a['block_number'])
+    # print(useful_info)
     # useful_info = info_listist
     publish = [x for x in useful_info if x['fn_name'] == 'publish']
     accept = [x for x in useful_info if x['fn_name'] == 'accept']
@@ -465,15 +484,16 @@ def add_log():
         if fn_type == "task":
             missionId = x['data']['missionId']
             solutionId = x['data']['solutionId']
-            solution_db.update_one({"missionId":missionId,'solutionId':solutionId,"solution_state":"waiting_chain"},{"$set":{"solution_state":"published"}})
+            solution_db.update_one({"missionId":missionId,'solutionId':str(solutionId),"solution_state":"waiting_chain"},{"$set":{"solution_state":"published"}})
         if fn_type == "question":
             missionId = str(x['data']['data']['missionId'])
             solutionId = int(x['data']['data']['solutionId'])
-            answer_db.update_one({"missionId":missionId,'id':solutionId,"answer_state":"waiting_chain"},{"$set":{"answer_state":"published"}})
+            answer_db.update_one({"missionId":missionId,'id':int(solutionId),"answer_state":"waiting_chain"},{"$set":{"answer_state":"published"}})
     for x in accept:
         fn_type= x['data'].get("fn_type",'task')
+        # print('accept',x)
         try:
-            solutionId = int(x['data']['solutionId'])
+            solutionId = str(x['data']['solutionId'])
             task = solution_db.find_one({'solutionId':solutionId})
             if task:
                 missionId = task['missionId']
